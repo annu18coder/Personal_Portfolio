@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="home">Ananya</a>
+        </div>
+
+        <button id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <ul id="navMenu">
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="hero-container">
+            <div>
+                <h1 class="hero-content">Hi, I'm Ananya</h1>
+                <p class="hero-role">Full Stack Developer </p>
+                <p class="hero-description">
+                    I build responsive and user-friendly web applications. </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="pri-btn">Contact Me </a>
+                    <a href="#projects" class="sec-btn">View Projects</a>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="AnuProfImg.jpeg" alt="Ananya, Full Stack Developer">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="about-heading">About Me</h2>
+
+        <div class="about-container">
+            <div class="about-content">
+                <h3>
+                    Building with curiosity and purpose
+                </h3>
+                <p>
+                    I'm a Computer Science student and aspiring Full Stack Developer
+                    who enjoys building responsive and user-friendly web applications.
+                </p>
+                <p>
+                    I’m currently strengthening my frontend and backend skills through
+                hands-on projects and continuous learning.
+                </p>
+            </div>
+
+            <div class="about-visual">
+                <div>
+                    <h3>What I Do?</h3>
+                    <ul class="about-list">
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <article class="project-card">
+                <h3>Student Performance Predictor</h3>
+                <p>Designed a Student Performance Predictor System, where you can enter student's details to predict the final marks.</p>
+                <div class="project-links">
+                    <a href="https://student-performance-predictor-xwbqwyvaddlsmidnbgpyc6.streamlit.app/" class="demo">Live Demo</a>
+                    <a href="https://github.com/annu18coder/Student-performance-predictor.git" class="github">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>DSA Tracker</h3>
+                <p>Designed a Tracker to track your personal DSA journey. It ensures that all your practice questions remain all at one place.</p>
+                <div class="project-links">
+                    <a href="https://dsa-tracker-10.vercel.app" class="demo">Live Demo</a>
+                    <a href="https://github.com/annu18coder/DSA-Tracker.git" class="github">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Workshop Landing Page</h3>
+                <p>Designed a Workshop Landing Page for an International Summer Bootcamp for 6-14 year kids.</p>
+                <div class="project-links">
+                    <a href="https://workshop-landing-page-five.vercel.app" class="demo">Live Demo</a>
+                    <a href="https://github.com/annu18coder/Workshop-Landing-Page.git" class="github">GitHub</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-contents">
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p>Echelon Institute of Technology (I.P.U)</p>
+            <p class="edu-duration">2024-2028</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">Have a question or want to work together?</p>
+        <form id="contactForm" action="process.php" method="POST">
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label> 
+                    <input type="text" id="name" name="name" required> 
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label> 
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="msg">Your Message</label> 
+                    <textarea name="msg" id="msg" required></textarea> 
+                </div>
+
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+        <p id="formMessage" role="status" aria-live="polite"></p>
+        <p class="contact-email">You can also contact at 
+            <a href="mailto:ananya.codes.tech@gmail.com">ananya.codes.tech@gmail.com</a></p>
+    </section>
+    <footer id="footer">
+        <p>©️ 2026 Ananya</p>
+        <p>Build with HTML, CSS, JavaScript, PHP, MYSQL</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

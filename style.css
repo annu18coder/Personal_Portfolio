@@ -1,0 +1,680 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* "Mujhe horizontal groups ko separate karna hai." */
+    padding: 20px;
+    padding-top: 10px;
+    align-items: center;
+    /* "Mujhe same row mein vertically align karna hai." */
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f6f6f9;
+    border: none;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #1f2937;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #2563eb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 20px;
+}
+
+nav>div>a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav button {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+
+/* hero section styling */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%;      we've modified it with below value */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-container img {
+    border-radius: 16px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.hero-content {
+    margin: 0 0 16px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 1000;
+    color: #3f4346;
+}
+
+.hero-role {
+    margin: 0 0 12px 0;
+}
+
+.hero-description {
+    margin: 0 0 24px 0;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.hero-actions a {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.pri-btn {
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+
+.pri-btn:hover {
+    background: #295ac3;
+}
+
+.sec-btn {
+    background: transparent;
+    color: #2563eb;
+    border-radius: 6px;
+    border: 1px solid #2563eb;
+}
+
+.sec-btn:hover {
+    background: #eff6ff;
+}
+
+#home {
+    padding: 40px 40px;
+    border-radius: 10px;
+}
+
+.hero-actions a:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+    padding-bottom: 0;
+
+}
+
+#about {
+    padding: 60px 40px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.about-visual {
+    /* border: 5px solid #bfdbfe; */
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    min-height: 160px;
+    /* padding: 20px 20px 0; */
+}
+
+.about-visual h3 {
+    margin: 10px 10px 20px;
+    font-size: 28px;
+    color: #363c43;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 12px;
+    margin-left: 7%;
+    border-left: 3px solid #2563eb;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-content {
+    /* border: 3px solid #bfdbfe; */
+    align-self: stretch;
+    padding: 16px;
+}
+
+.about-content h3 {
+    margin: 0 0 40px;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.about-content p {
+    margin: 0 0 16px;
+    line-height: 1.7;
+}
+
+.about-heading {
+    margin: 0 0 40px;
+    font-size: 28px;
+    color: #444a51;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Skills section */
+#skills {
+    /* display: ; */
+    margin: 30px;
+    padding: 20px 10px 30px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -6px;
+    border-radius: 10px;
+}
+
+#skills h2 {
+    text-align: center;
+    /* margin: 30px;
+    padding: 20px 10px 30px 10px; */
+    color: #3a4049;
+    font-size: 28px;
+    word-spacing: -6.6px;
+}
+
+.skills-list {
+    justify-content: center;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 16px;
+}
+
+.skills-list li {
+    border: 1px solid #0d3092;
+    background: #174ab8;
+    color: #eff6ff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.skills-list li:hover {
+    border: 1px solid #2563eb;
+    background: #2563eb;
+    color: #eff6ff;
+    transform: translateY(-3px);
+}
+
+/* Project section */
+#projects {
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+#projects h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #444a51;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -6px;
+    padding: 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.project-card {
+    border: 7px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 0px 30px 30px 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2 ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.project-card h3 {
+    color: #444a51;
+    font-size: 22px;
+    line-height: 1.3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project-card p {
+    color: #444a51;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 1.2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project-card h3:hover {
+    color: #2a313b;
+    font-size: 22px;
+    line-height: 1.3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project-links {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.project-links a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.demo {
+    border: 2px solid #123eb7;
+    background: #123eb7;
+    color: white;
+
+}
+
+.github {
+    border: 1px solid #123eb7;
+    color: #123eb7;
+}
+
+.demo:hover {
+    border: 1px solid #2454d8;
+    background: #2454d8;
+}
+
+.github:hover {
+    border: 1px solid #2454d8;
+    background: #dde5fc;
+}
+
+#education {
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.edu-contents {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.edu-contents h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #1e293b;
+}
+
+.edu-contents p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.edu-duration {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #eff6ff;
+    border-radius: 20px;
+    color: #1e3a8a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#education h2 {
+    margin: 0 0 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #444a51;
+    padding: 10px 0px 20px 0px;
+}
+
+#contact {
+    padding: 60px 40px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #444a51;
+    padding: 10px 0px 20px 0px;
+}
+
+.contact-intro {
+    font-size: 20px;
+    color: #2e3238;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 2px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.6);
+    background: #f9fafb;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 30px;
+}
+
+.form-group label {
+    /* text-align: center; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* max-width: 200px; */
+    /* margin: 0 auto; */
+    padding: 12px 14px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    box-sizing: border-box;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.4);
+}
+
+#msg {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+    border-color: #0d3092;
+}
+
+.contact-form button {
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    max-width: 150px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-form button:hover {
+    background: #1d4ed8;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.contact-form button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+.contact-form button:active {
+    transform: scale(0.97);
+}
+
+.contact-email {
+    font-size: 16px;
+    color: #2e3238;
+    padding: 10px;
+    text-align: center;
+    /* font-weight: 800; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-email a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #2e3238;
+    padding: 2px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-email a:hover {
+    color: #526075;
+}
+
+#footer {
+    padding: 2px;
+    background: #e9e9ed;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+#footer p {
+    text-align: center;
+    font-size: 14px;
+}
+
+#footer p:last-child {
+    margin-top: 12px;
+}
+
+#formMessage {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+    background-color: #dcfce7;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-container img {
+        margin-top: 32px;
+        width: 180px;
+    }
+
+    /* .hero-container > div:first-child{
+    text-align: center; 
+    }
+    
+    iski jgh y bhi kr skte h
+    
+    .hero-container{
+        text-align: center;
+    }
+
+    */
+
+    .hero-content {
+        /* available mobile width use kr skte h */
+        width: 100%;
+        /* desktop pr excessively wide nhi hoga */
+        max-width: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about {
+        padding: 50px 20px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-heading {
+        padding: 0 14px 0;
+    }
+
+    .about-content h3 {
+        font-size: 24px;
+    }
+
+    .about-visual {
+        margin: 0 14px;
+    }
+
+    .skills-list {
+        justify-content: flex-start;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 12px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    #education {
+        padding: 50px 20px;
+    }
+
+    #education h2 {
+        font-size: 30px;
+    }
+
+    .edu-contents {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #contact {
+        padding: 50px 20px;
+    }
+
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    .contact-intro {
+        font-size: 17px;
+        padding: 5px 0;
+    }
+
+    .contact-email {
+        font-size: 15px;
+    }
+
+    .contact-email a {
+        font-size: 15px;
+    }
+
+}
+
